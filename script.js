@@ -9,5 +9,7 @@ function buttonClick2() {
 
     str = str.replace(/\'/ig, "\"");
 
+    str = str.replace(/\b\"\b/ig, "\'");
+
     text1.innerHTML = str;
 }
